@@ -1,6 +1,5 @@
 <?php
 $pg = new Template('Programación Lineal');
-
 // Aquí se coloca la lógica del negocio... 
 
 

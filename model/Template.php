@@ -15,20 +15,19 @@ class Template
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>..:: Matemática | <?php echo $this->title; ?> ::..</title>
     <link rel="stylesheet" href="<?php echo Link::ruta(); ?>assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="<?php echo Link::ruta(); ?>">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse fixed" id="navbarColor02">
     <ul class="navbar-nav mr-auto">
+      
       <li class="nav-item active">
-        <a class="nav-link" href="<?php echo Link::ruta(); ?>">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="#">Features</a>
       </li>
       <li class="nav-item">
@@ -70,11 +69,10 @@ class Template
         ?>
         </div>
     </div>
-    
-    <script src="<?php echo Link::ruta(); ?>assets/js/jquery.js"></script>
     <script src="<?php echo Link::ruta(); ?>assets/js/popper.js"></script>
     <script src="<?php echo Link::ruta(); ?>assets/js/bootstrap.js"></script>
     <script src="<?php echo Link::ruta(); ?>assets/js/custom.js"></script>
+    <!-- <script src="<?php echo Link::ruta(); ?>assets/js/fadeIn.js"></script> -->
 </body>
 </html>
         <?php 
