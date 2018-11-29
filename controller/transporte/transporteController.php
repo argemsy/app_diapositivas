@@ -27,8 +27,8 @@ function view($metodo, $array)
             <?php
         break;
 
-        case 'ejemplos':
-            echo $array['ejemplos'];
+        case 'ejemplo':
+            echo "Ejemplos ...";
         break;
 
     }
