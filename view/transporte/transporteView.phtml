@@ -14,8 +14,27 @@
         </div>
         <div class="col-md-8">
             
-        <?php view(Request::get_method(), $transporte); ?>
-
+        <?php
+        if(empty(Request::get_args())){
+            view(Request::get_method(), $transporte); 
+        }else{
+            img(Request::get_args());
+            ?>
+            <br><br>
+            <ol>
+            <?php
+            for($i=0;$i<6;$i++){
+                ?>
+                    <li><a href="<?php echo Link::ruta(); ?>transporte/ejemplo/<?php echo $i + 1; ?>">Imagen <?php echo $i + 1; ?></a></li>
+                <?php
+        
+            }
+            ?>
+            </ol>
+            
+            <?php
+        }
+                ?>
 
         </div>
     </div>

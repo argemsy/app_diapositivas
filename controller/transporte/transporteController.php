@@ -57,6 +57,13 @@ $transporte['esquinaNoroeste'] = '<ul>
                                     <img width="60%" class="thumbnail" src="http://localhost/app_diapositivas/assets/imgs/noroeste.png" alt="Esquina Noroeste"/>
                                 </center>';
 
+$transporte['noroeste_ejemplo'] = '
+
+<img src="http://localhost/app_diapositivas/assets/imgs/noroeste1.png" alt="noroeste 1" class="img-thumbnail">
+<br>
+<br>
+';
+
 $transporte['vogel'] = '<p class="text-justify">
 El método de aproximación de Vogel es un método heurfstico de resolución  de problemas de transporte capaz de alcanzar una solución 
 báisica no artificial de inicio, este modelo requiere de la realización  de un número generalmente mayor
@@ -98,6 +105,20 @@ function view($metodo, $array)
 
         case 'esquinanoroeste':
             echo $array['esquinaNoroeste'];
+            echo "<br><br>";
+            ?>
+            <a href="<?php echo Link::ruta(); ?>transporte/ejemplo/">Ejemplo</a>
+            <?php
+        break;
+
+        case 'ejemplo':
+            echo $array['noroeste_ejemplo'];
+            echo "<br><br>";
+            for($i=0;$i<6;$i++){
+            ?>
+            <a href="<?php echo Link::ruta(); ?>transporte/ejemplo/<?php echo $i + 1; ?>">Imagen <?php echo $i + 1; ?></a><br>
+            <?php
+            }
         break;
 
         case 'vogel':
@@ -114,12 +135,25 @@ function view($metodo, $array)
         <br>
         <br>
         <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <?php
         break;
 
     }
 }
 
+function img($img){
+    echo '<img src="http://localhost/app_diapositivas/assets/imgs/noroeste'.$img.'.png" alt="noroeste 1" class="img-thumbnail">';
+}
+
 include 'view/transporte/transporteView.phtml';
 ?>
-

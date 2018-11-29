@@ -1,13 +1,36 @@
 <div class="col-md-12">
+        <?php
+        if(!empty(Request::get_controller())){
+        ?>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <?php
+        }
+        ?>
     <div class="jumbotron">
         <br>
         <br>
-        <h1 class="text-center text-success">
+        <?php
+        if(empty(Request::get_controller())){
+        ?>
+        <h1 class="text-center">
             ..:: Programación Lineal  ::..
         </h1>
         <br>
         <br>
         <br>
+        <br>
+<br>
+<br>
+<br>
         
         
         <p class="text-right">Integrantes:
@@ -21,18 +44,27 @@
         <h3 class="text-center">
             <a class="btn btn-default" href="<?php echo Link::ruta(); ?>inicio">Siguiente</a>
         </h3>
+        <?php 
+        }else{
+            ?>
+        <h1 class="text-center">
+            ..:: Muchas Gracias por su atención  ::..
+        </h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+       
+            <?php
+        }
+        ?>
         
     </div>
     
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+
 <script>
 $(document).ready(function(){
     $("body").hide().fadeIn(5000);

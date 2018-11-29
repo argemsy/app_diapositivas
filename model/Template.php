@@ -31,8 +31,12 @@ class Template
         <a class="nav-link" href="<?php echo Link::ruta(); ?>inicio">Programación Lineal</a>
       </li>
       
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="<?php echo Link::ruta(); ?>transporte">Método de Transporte</a>
+      </li>
+
+      <li class="nav-item active">
+      <a class="nav-link" href="<?php echo Link::ruta(); ?>index/salir">Fin</a>
       </li>
       
     </ul>
