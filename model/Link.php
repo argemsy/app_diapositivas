@@ -4,7 +4,7 @@ class Link
 {
     static public function ruta()
     {
-        return 'http://localhost/mvc/';
+        return 'http://localhost/app_diapositivas/';
     }
 
     static public function autoload()

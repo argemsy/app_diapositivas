@@ -18,7 +18,7 @@ class Template
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="<?php echo Link::ruta(); ?>">Inicio</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -69,8 +69,36 @@ class Template
     public function __destruct()
     {
         ?>
+        
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
     </div>
+    <footer class="section footer-classic context-success bg-info bg-image" >
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <center>
+                    <h5 class="text-center">
+                        Matemática - Programación Lineal - Método del Transporte
+                    </h5>
+                
+                </center>
+            </div>
+        </div>
+        <br>
+      </footer>
     <script src="<?php echo Link::ruta(); ?>assets/js/popper.js"></script>
     <script src="<?php echo Link::ruta(); ?>assets/js/bootstrap.js"></script>
     <script src="<?php echo Link::ruta(); ?>assets/js/custom.js"></script>
