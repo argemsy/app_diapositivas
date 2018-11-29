@@ -5,7 +5,9 @@ $transporte = array();
 
 $transporte['concepto'] = '<h4 class="text-center">Concepto</h4>
                             
-                                <p>
+                                <p class="text-justify">
+                                    Estos modelos tienen por objetivo encontrar el costo mínimo para enviar suministros desde diversos orígenes hacia los destinos donde se necesitan.<br><br>
+
                                     El problema del transporte consiste en la distribución de forma óptima (coste mínimo) de distintas cantidades de producto
                                     desde m lugares de origen que disponen de diferentes cantidades del mismo, en n destinos que demandan cada uno otras ciertas cantidades.
                                     <br><br>
@@ -21,13 +23,13 @@ $transporte['concepto'] = '<h4 class="text-center">Concepto</h4>
                             <br>
                             <center> <img class="img-thumbnail" width="70%" src="http://localhost/app_diapositivas/assets/imgs/transporte_math.png" alt="math_transporte"> </center>
                             <br>
-                                <p>
+                                <p class="text-justify">
                                     Además se considera que la cantidad total que puede enviarse es igual a la cantidad demandada, esto es: 
                                 </p>
                             <br>
                             <center> <img class="img-thumbnail" width="40%" src="http://localhost/app_diapositivas/assets/imgs/transporte2_math.png" alt="math_transporte"> </center>
                             <br>
-                                <p>
+                                <p class="text-justify">
                                 En esta ultima condición no supone una limitación al problema general, pues en caso de no cumplirse, supondremos un destino ficticio con costes
                                 de transporte nulos, segun que sobren o falten, respectivamente, materiales a enviar.
                                 </p>
@@ -55,12 +57,18 @@ $transporte['esquinaNoroeste'] = '<ul>
                                     <img width="60%" class="thumbnail" src="http://localhost/app_diapositivas/assets/imgs/noroeste.png" alt="Esquina Noroeste"/>
                                 </center>';
 
-$transporte['vogel'] = '<p>
+$transporte['vogel'] = '<p class="text-justify">
+El método de aproximación de Vogel es un método heurfstico de resolución  de problemas de transporte capaz de alcanzar una solución 
+báisica no artificial de inicio, este modelo requiere de la realización  de un número generalmente mayor
+de iteraciones que los demás métodos heuristicos existentes con este fin, sin embargo produce mejores resultados iniciales que los mismos.
+                        </p>
+                        <p class="text-justify">
+                        El método suele producir una mejor solución inicial que los métodos de noroeste o costo mínimo. Ya que provoca un a solución inicial óptima, o inmediata al nivel optimo. 
                         El método consiste en la realización de un algoritmo que consta de 3 pasos fundamentales y 1 más que asegura el ciclo hasta la culminación del método.
                         </p>
                         <br>
                         <h5 class="text-center">Pasos del método de Vogel</h5>
-                        <ol>
+                        <ol  class="text-justify">
                             <li>
                             Determinar para cada fila y columna una medida de penalización restando los dos costos menores en filas y columnas. 
                             </li>
